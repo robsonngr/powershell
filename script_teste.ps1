@@ -1,6 +1,9 @@
 [Boolean]$DevMode = [boolean]::Parse($env:DEVMODE)
 
-$env:DEVMODE
+
+#$env:DEVMODE
+
+#[Boolean]$DevMode = $true
 
 
 if ($DevMode) {
