@@ -10,6 +10,12 @@ pool:
   vmImage: windows-latest
 
 steps:
+- powershell: |
+    $teste1 = $env:DEV_TESTE123
+    echo "##vso[task.setvariable variable=TesteDEVMODE;isOutput=true]$teste1"
+  name: BuildVariable
+  displayName: 'Set Environment Variables'
+
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
