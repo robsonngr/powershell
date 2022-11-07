@@ -14,7 +14,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      Write-Host "dir env:"
+      dir env:
       
 - task: PowerShell@2
   inputs:
